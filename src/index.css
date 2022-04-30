@@ -1,0 +1,244 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+body,
+.bill-input,
+.people-input {
+  background: rgb(208, 244, 255);
+}
+
+.bill-container {
+  width: 60%;
+  margin: 150px auto;
+  min-height: 350px;
+  background: #fff;
+  box-shadow: 1px 2px 2px 1px rgb(0, 138, 180);
+}
+
+.bill-container,
+.right-bill-content,
+.percentage-value,
+.tip-percentages input,
+.reset-btn {
+  border-radius: 7px;
+}
+
+.bill-container,
+.left-bill-content,
+.bill-input-form,
+.people-input-form,
+.tip-amount-person {
+  display: flex;
+}
+
+.bill-container {
+  justify-content: space-around;
+}
+
+.tip-amount-person {
+  justify-content: space-between;
+}
+
+.left-bill-content,
+.right-bill-content {
+  height: 300px;
+  padding: 15px;
+}
+
+.left-bill-content {
+  width: 50%;
+}
+
+.right-bill-content {
+  width: 45%;
+}
+
+.left-bill-content,
+.bill-input-form,
+.people-input-form {
+  flex-direction: column;
+}
+
+.bill-input,
+.people-input {
+  padding: 7px;
+  border-radius: 5px;
+  border: none;
+  margin: 15px 0px;
+}
+
+.bill-input:focus,
+.people-input:focus,
+.tip-percentages input:focus {
+  outline: #fff;
+}
+
+.tip-percentages {
+  display: grid;
+  grid-template-columns: auto auto auto;
+  grid-gap: 10px;
+  margin: 10px 0px;
+}
+
+.tip-percentages-container {
+  margin: 10px 0px;
+}
+
+.percentage-value {
+  color: #fff;
+  transition: 0.4s;
+  cursor: pointer;
+}
+
+.percentage-value:hover {
+  background: rgb(97, 250, 255);
+  color: #000;
+}
+
+.percentage-value,
+.tip-percentages input {
+  padding: 5px;
+  width: 100px;
+  text-align: center;
+  margin: auto;
+}
+
+.tip-percentages input {
+  border: 1px solid rgb(168, 168, 168);
+}
+
+.percentage-value,
+.right-bill-content {
+  background: rgb(24, 90, 110);
+}
+
+.bill-container,
+.tip-amount-person {
+  align-items: center;
+}
+
+.tip-amount-person {
+  margin: 25px 0px;
+}
+
+.tip-amount-person p {
+  color: #fff;
+}
+
+.reset-btn {
+  width: 100%;
+  padding: 7px;
+  background: rgb(97, 250, 255);
+  transform: translateY(5rem);
+  border: none;
+  cursor: pointer;
+  transition: 0.4s;
+}
+
+.reset-btn:hover {
+  background: #fff;
+  color: #000;
+}
+
+h3 {
+  color: rgb(97, 250, 255);
+}
+
+.errorMessage {
+  position: relative;
+  top: -10px;
+  display: none;
+  color: rgb(255, 0, 0);
+}
+
+.displayMessage .errorMessage {
+  display: block;
+}
+
+@media (max-width: 1180px) {
+  .percentage-value,
+  .tip-percentages input {
+    width: 70px;
+  }
+}
+
+@media (max-width: 850px) {
+  .bill-container {
+    min-height: 400px;
+  }
+
+  .left-bill-content,
+  .right-bill-content {
+    height: 350px;
+  }
+
+  .tip-percentages {
+    grid-template-columns: auto auto;
+  }
+
+  .percentage-value,
+  .tip-percentages input {
+    width: 80px;
+  }
+
+  .people-input-form {
+    margin-bottom: 30px;
+  }
+
+  .reset-btn {
+    transform: translateY(8rem);
+  }
+}
+
+@media (max-width: 750px) {
+  .bill-container {
+    width: 80%;
+  }
+}
+
+@media (max-width: 500px) {
+  .bill-container {
+    flex-direction: column;
+  }
+
+  .left-bill-content,
+  .right-bill-content {
+    width: 100%;
+  }
+
+  .tip-percentages {
+    grid-template-columns: auto auto auto;
+  }
+}
+
+@media (max-width: 355px) {
+  .right-bill-content {
+    margin-top: 10px;
+  }
+}
+
+@media (max-width: 350px) {
+  .tip-percentages {
+    grid-template-columns: auto auto;
+  }
+}
+
+@media (max-width: 275px) {
+  small {
+    margin-bottom: -20px;
+  }
+}
+
+@media (max-width: 250px) {
+  .percentage-value,
+  .tip-percentages input {
+    width: 50px;
+  }
+
+  .right-bill-content {
+    margin-top: 20px;
+  }
+}
