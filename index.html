@@ -1,1 +1,71 @@
-Hello World
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="./src/index.css">
+    <title> Tip Calculator </title>
+</head>
+<body>
+  
+
+    <div class="bill-container">
+        <section class="left-bill-content">
+            <form class="bill-input-form">
+                <label> Bill </label>
+                <input type="number" class="form-input bill-input">
+                <small class="errorMessage"> Kindly, input a bill value </small>
+            </form>
+
+            <section class="tip-percentages-container">
+                <label> Select Tip % </label>
+                <section class="tip-percentages">
+                    <p class="percentage-value">5<a> %</a></p>
+                    <p class="percentage-value">10<a> %</a></p>
+                    <p class="percentage-value">15<a> %</a></p>
+                    <p class="percentage-value">25<a> %</a></p>
+                    <p class="percentage-value">50<a> %</a></p>
+                    <input type="number" placeholder="Custom" class="custom">
+                </section>
+            </section>
+
+            <form class="people-input-form">
+                <label> Number of People </label>
+                <input type="number" class="form-input people-input">
+                <small class="errorMessage"> Kindly, input number of people </small>
+            </form>
+        </section>
+
+        <aside class="right-bill-content">
+            <article class="tip-amount-person">
+                <p> Tip Amount <br /> /person </p>
+                <h3>$<a class="tip-person">0.00</a></h3>
+            </article>
+
+            <article class="tip-amount-person">
+                <p> Total Amount <br /> /person </p>
+                <h3>$<a class="total-person">0.00</a></h3>
+            </article>
+
+            <button class="reset-btn"> RESET </button>
+        </aside>
+    </div>
+    
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+<script src="./src/index.js"></script>   
+</body>
+</html>
